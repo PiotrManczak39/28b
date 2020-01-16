@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Link for mobile devices -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Google fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/styles.css" >
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.bundle.min.js"></script>
+     <title>The Overview</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="wrapper">
+        <nav id="navigation" class="nav">
+          <div class="welcome">
+            <p>Welcome</p>
+            <a href="http://myportfoliopiotr.co.uk/" target="_blank">Andy Repp</a>
+          </div>
+          <div class="metrics">
+            <p>Metrics</p>
+            <a href="#">Overview</a>
+            <a href="#">Detailing</a>
+            <a href="#">Calls</a>
+          </div>
+          <div class="information">
+            <p>Information</p>
+            <a href="#">About profiles</a>
+            <a href="#">Detailing targets</a>
+          </div>
+        </nav> <!-- End of the nav -->
+
+        <section class="info">
+          <div>
+            <h1>Overview</h1>
+          </div>
+          <p><strong>Next call</strong></p>
+          <div class="info-grid">
+              <p class="date1"><strong>Date:</strong></p>
+              <p class="date2">Tomorrow, 3PM <br>12 November 2017</p>
+
+              <p class="account1"><strong>Account:</strong></p>
+              <p class="account2">Dr. Clinton Ackerman</p>
+
+              <p class="speciality1"><strong>Speciality:</strong></p>
+              <p class="speciality2">Respiratory therapist<br> Assistive theraphy</p>
+
+              <p class="profile1"><strong>Profile:</strong></p>
+              <p class="profile2">Confident</p>
+          </div>
+        </section>
+
+        <section class="chart1">
+          <div>
+            <h3>Calls this month</h3>
+          </div>
+
+          <canvas id="myChart"></canvas>
+
+        </section>
+
+        <section class="charts">
+          <div>
+            <h3>Detailing topic breakdown</h3>
+          </div>
+          <div class="menu">
+            <span class="blue">Adherence</span>
+            <span class="red">Combination Theraphy</span>
+            <span class="yellow">Dosing</span>
+            <span class="red">Guidelines</span>
+            <span class="purple">Safety</span>
+            <span  class="gray">Other</span>
+          </div>
+
+          <p>Avg. All</p>
+          <div class="avg">
+            <div class="item1"></div>
+            <div class="item2"></div>
+            <div class="item3"></div>
+            <div class="item4"></div>
+            <div class="item5"></div>
+            <div class="item6"></div>
+          </div>
+          <p>Cautious</p>
+          <div class="caut">
+            <div class="item1"></div>
+            <div class="item2"></div>
+            <div class="item3"></div>
+            <div class="item4"></div>
+            <div class="item5"></div>
+            <div class="item6"></div>
+          </div>
+          <p>Complacent</p>
+          <div class="comp">
+            <div class="item1"></div>
+            <div class="item2"></div>
+            <div class="item3"></div>
+            <div class="item4"></div>
+            <div class="item5"></div>
+            <div class="item6"></div>
+          </div>
+          <p>Confident</p>
+          <div class="confident">
+            <div class="item1"></div>
+            <div class="item2"></div>
+            <div class="item3"></div>
+            <div class="item4"></div>
+            <div class="item5"></div>
+            <div class="item6"></div>
+          </div>
+
+        </section>
+
+      </div> <!-- End of the wrapper -->
+    </div> <!-- End of the container -->
+    <script src="js/script.js"></script>
+  </body>
+</html>
