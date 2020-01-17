@@ -1,0 +1,272 @@
+$font-stack-primary: 'Lato', sans-serif;
+$color-navigation: #504c4b;
+$border-radius: 5px;
+
+* {
+  box-sizing: border-box;
+}
+a {
+  text-decoration: none;
+}
+h1 {
+  font-family: $font-stack-primary;
+  font-weight: lighter;
+}
+p, a, h3 {
+  font-family: $font-stack-primary;
+  font-size: .80em;
+}
+
+/*****************************
+       Grid Display
+*****************************/
+.wrapper {
+  display: grid;
+  // padding-right: 3%;
+  grid-template-columns: 1fr 2fr 2fr;
+  grid-template-rows: 50% 50%;
+  grid-template-areas:
+      "nav info chart1"
+      "nav charts charts";
+}
+
+.nav {
+  padding-left: 47px;
+  padding-top: 65px;
+  grid-area: nav;
+}
+
+.info {
+  grid-area: info;
+  padding-left: 2em;
+}
+
+.chart1 {
+  max-width: 80%;
+  max-height: 80%;
+  grid-area: chart1;
+  margin-top: 59px;
+}
+
+.charts {
+  grid-area: charts;
+  margin: auto;
+  min-width: 95%;
+}
+.info-grid p {
+  line-height: 1.1em;
+}
+
+/****************************
+      Navigation styling
+****************************/
+
+#navigation {
+  color: white;
+  background-color: $color-navigation;
+}
+
+#navigation p {
+  opacity: .6;
+}
+
+#navigation a {
+  color: white;
+}
+/* .nav p,
+.nav a {
+  padding-bottom: 30px;
+} */
+
+.welcome {
+  padding-bottom: 30px;
+}
+
+.metrics,
+.information {
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 50px;
+}
+
+.metrics p,
+.information p {
+  padding-bottom: 26px;
+}
+
+a[href="#"] {
+  padding-bottom: 2.5em;
+}
+
+/****************************
+      Info styling
+****************************/
+
+.info-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  grid-template-areas:
+      "date1 date2 date2"
+      "account1 account2 account2"
+      "speciality1 speciality2 speciality2"
+      "profile1 profile2 profile2";
+}
+
+.date1{
+  grid-area: date1;
+  padding-bottom: 0;
+}
+.date2 {
+  grid-area: date2;
+  line-height: 2em;
+  padding-bottom: 0;
+}
+.account1 {
+  grid-area: account1;
+  padding-bottom: 0;
+}
+.account2 {
+  grid-area: account2;
+  padding-bottom: 0;
+}
+.speciality1 {
+  grid-area: speciality1;
+  padding-bottom: 0;
+}
+.speciality2 {
+  grid-area: speciality2;
+  line-height: 2em;
+  padding-bottom: 0;
+}
+.profile1 {
+  grid-area: profile1;
+  padding-bottom: 0;
+}
+.profile2 {
+  grid-area: profile2;
+  padding-bottom: 0;
+}
+
+/*****************************
+     Charts Styling
+******************************/
+
+.menu {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.blue::before {
+  content: '';
+  display: inline-block;
+  height: 10px;
+  width: 10px;
+  background: blue;
+  margin-right: 7px;
+  transform: rotate(45deg);
+}
+
+.red::before {
+  content: '';
+  display: inline-block;
+  height: 10px;
+  width: 10px;
+  background: red;
+  margin-right: 7px;
+  transform: rotate(45deg);
+}
+.yellow::before {
+  content: '';
+  display: inline-block;
+  height: 10px;
+  width: 10px;
+  background: yellow;
+  margin-right: 7px;
+  transform: rotate(45deg);
+}
+.red::before {
+  content: '';
+  display: inline-block;
+  height: 10px;
+  width: 10px;
+  background: red;
+  margin-right: 7px;
+  transform: rotate(45deg);
+}
+.purple::before {
+  content: '';
+  display: inline-block;
+  height: 10px;
+  width: 10px;
+  background: purple;
+  margin-right: 7px;
+  transform: rotate(45deg);
+}
+.gray::before {
+  content: '';
+  display: inline-block;
+  height: 10px;
+  width: 10px;
+  background: gray;
+  margin-right: 7px;
+  transform: rotate(45deg);
+}
+
+.charts div h3 {
+  padding-top: 1.2em;
+}
+
+/********************************
+      Bars Styling
+********************************/
+
+.avg {
+  display: grid;
+  grid-template-columns: 15% 22% 21% 26% 12% 4%;
+  min-height: 19px;
+  min-width: 95%;
+}
+.caut {
+  display: grid;
+  grid-template-columns: 12% 25% 20% 22% 15% 6%;
+  min-height: 19px;
+  min-width: 95%;
+}
+.comp {
+  display: grid;
+  grid-template-columns: 9% 19% 27% 18% 13% 14%;
+  min-height: 19px;
+  min-width: 95%;
+}
+.confident {
+  display: grid;
+  grid-template-columns: 6% 12% 27% 15% 23% 17%;
+  min-height: 19px;
+  min-width: 95%;
+}
+
+.item1 {
+  background: blue;
+  border-top-left-radius: $border-radius;
+  border-bottom-left-radius: $border-radius;
+}
+
+.item2 {
+  background: green;
+}
+.item3 {
+  background: yellow;
+}
+.item4 {
+  background: red;
+}
+.item5 {
+  background: purple;
+}
+.item6 {
+  background: gray;
+  border-top-right-radius: $border-radius;
+  border-bottom-right-radius: $border-radius;
+}
