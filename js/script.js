@@ -100,7 +100,7 @@ var config1 = {
 var ctx = document.getElementById("myChart").getContext("2d");
 var myChart = new Chart(ctx, config);
 
-window.addEventListener('click', (event) => {
+myChart.addEventListener('click', (event) => {
   if (event.target.tagName == 'CANVAS') {
     if (myChart.options.elements.center.text === '21/28') {
         myChart = new Chart(ctx, config1);
