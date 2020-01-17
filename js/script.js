@@ -41,6 +41,9 @@ Chart.pluginService.register({
   }
 });
 
+let randomNumber = () => {
+  return Math.floor(Math.random() * 19) + 1;
+}
 
 var config = {
   type: 'doughnut',
@@ -82,7 +85,7 @@ var config1 = {
   options: {
     elements: {
       center: {
-        text: '6/28',
+        text: randomNumber() + '/28',
         color: '#000000',
         fontStyle: 'Arial',
         sidePadding: 20
@@ -100,60 +103,14 @@ var myChart = new Chart(ctx, config);
 window.addEventListener('click', (event) => {
   if (event.target.tagName == 'CANVAS') {
     if (myChart.options.elements.center.text === '21/28') {
-      myChart = new Chart(ctx, {
-        type: 'doughnut',
-        data: {
-          labels: [],
-          datasets:[{
-              label: 'My First dataset',
-              backgroundColor: 'orange',
-              borderColor: 'orange',
-              data: [75]
-          }]
-        },
-        options: {
-          elements: {
-            center: {
-              text: '18/28',
-              color: '#000000',
-              fontStyle: 'Arial',
-              sidePadding: 20
-            }
-          },
-          cutoutPercentage: 92,
-          rotation: 2 * Math.PI,
-          circumference: 1.5 * Math.PI
-        }
-      });
+        myChart = new Chart(ctx, config1);
     } else {
-      myChart = new Chart(ctx, {
-        type: 'doughnut',
-        data: {
-          labels: [],
-          datasets:[{
-              label: 'My First dataset',
-              backgroundColor: 'orange',
-              borderColor: 'orange',
-              data: [75]
-          }]
-        },
-        options: {
-          elements: {
-            center: {
-              text: '21/28',
-              color: '#000000',
-              fontStyle: 'Arial',
-              sidePadding: 20
-            }
-          },
-          cutoutPercentage: 92,
-          rotation: 2 * Math.PI,
-          circumference: 1.5 * Math.PI
-        }
-      });
+      myChart = new Chart(ctx, config);
     }
   }
 });
+
+
 
 
 
