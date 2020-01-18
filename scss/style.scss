@@ -155,7 +155,6 @@ p, a, h3 {
   @include beforeCubes;
   background: blue;
 }
-
 .green::before {
   @include beforeCubes;
   background: green;
@@ -186,19 +185,19 @@ p, a, h3 {
 
 .avg {
   @include bottomBars(95%);
-  grid-template-columns: $item1 $item2 $item3 $item4 $item5 $item6;
+  // grid-template-columns: $item1 $item2 $item3 $item4 $item5 $item6;
 }
 .caut {
   @include bottomBars(95%);
-  grid-template-columns: $item7 $item12 $item8 $item9 $item10 $item11;
+  // grid-template-columns: $item7 $item12 $item8 $item9 $item10 $item11;
 }
 .comp {
   @include bottomBars(95%);
-  grid-template-columns: $item13 $item14 $item15 $item16 $item17 $item18;
+  // grid-template-columns: $item13 $item14 $item15 $item16 $item17 $item18;
 }
 .confident {
   @include bottomBars(95%);
-  grid-template-columns: $item19 $item20 $item21 $item22 $item23 $item24;
+  // grid-template-columns: $item19 $item20 $item21 $item22 $item23 $item24;
 }
 
 .item1 {

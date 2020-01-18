@@ -1,3 +1,71 @@
+const avg = document.querySelector('.avg');
+const caut = document.querySelector('.caut');
+const comp = document.querySelector('.comp');
+const confident = document.querySelector('.confident');
+
+function random() {
+  return Math.floor(Math.random() * 20) + 1;
+}
+let bar1 = random();
+let bar2 = random();
+let bar3 = random();
+let bar4 = random();
+let bar5 = random();
+let bar6 = 100 - (bar1 + bar2 + bar3 + bar4 + bar5);
+let nowy = '';
+nowy += bar1 + '% ';
+nowy += bar2 + '% ';
+nowy += bar3 + '% ';
+nowy += bar4 + '% ';
+nowy += bar5 + '% ';
+nowy += bar6 + '%';
+
+let bar7 = random();
+let bar8 = random();
+let bar9 = random();
+let bar10 = random();
+let bar11 = random();
+let bar12 = 100 - (bar7 + bar8 + bar9 + bar10 + bar11);
+let secondBatch = '';
+secondBatch += bar7 + '% ';
+secondBatch += bar8 + '% ';
+secondBatch += bar9 + '% ';
+secondBatch += bar10 + '% ';
+secondBatch += bar11 + '% ';
+secondBatch += bar12 + '%';
+
+let bar13 = random();
+let bar14 = random();
+let bar15 = random();
+let bar16 = random();
+let bar17 = random();
+let bar18 = 100 - (bar13 + bar14 + bar15 + bar16 + bar17);
+let thirdBatch = '';
+thirdBatch += bar13 + '% ';
+thirdBatch += bar14 + '% ';
+thirdBatch += bar15 + '% ';
+thirdBatch += bar16 + '% ';
+thirdBatch += bar17 + '% ';
+thirdBatch += bar18 + '%';
+
+let bar19 = random();
+let bar20 = random();
+let bar21 = random();
+let bar22 = random();
+let bar23 = random();
+let bar24 = 100 - (bar19 + bar20 + bar21 + bar22 + bar23);
+let forthBatch = '';
+forthBatch += bar19 + '% ';
+forthBatch += bar20 + '% ';
+forthBatch += bar21 + '% ';
+forthBatch += bar22 + '% ';
+forthBatch += bar23 + '% ';
+forthBatch += bar24 + '%';
+
+avg.style.gridTemplateColumns = nowy;
+caut.style.gridTemplateColumns =  secondBatch;
+comp.style.gridTemplateColumns =  thirdBatch;
+confident.style.gridTemplateColumns =  forthBatch;
 
 Chart.pluginService.register({
   beforeDraw: function (chart) {

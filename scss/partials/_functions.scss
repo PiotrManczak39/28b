@@ -1,50 +1,50 @@
 /*----------- Functions------------*/
-@function randomNumber() {
-  @return (random(20) * 100%) / 100;
-}
-// First bar ------------------/
-$item1: randomNumber();
-$item2: randomNumber();
-$item3: randomNumber();
-$item4: randomNumber();
-$item5: randomNumber();
-
-@function theOther() {
-  @return 100% - ($item1 + $item2 + $item3 + $item4 + $item5);
-}
-$item6: theOther();
-// Second bar ------------------/
-$item7: randomNumber();
-$item8: randomNumber();
-$item9: randomNumber();
-$item10: randomNumber();
-$item11: randomNumber();
-
-@function theOther2() {
-  @return 100% - ($item7 + $item8 + $item9 + $item10 + $item11);
-}
-$item12: theOther2();
-
-// Third bar ------------------/
-$item13: randomNumber();
-$item14: randomNumber();
-$item15: randomNumber();
-$item16: randomNumber();
-$item17: randomNumber();
-
-@function theOther3() {
-  @return 100% - ($item13 + $item14 + $item15 + $item16 + $item17);
-}
-$item18: theOther3();
-
-// Fourth bar ------------------/
-$item19: randomNumber();
-$item20: randomNumber();
-$item21: randomNumber();
-$item22: randomNumber();
-$item23: randomNumber();
-
-@function theOther4() {
-  @return 100% - ($item19 + $item20 + $item21 + $item22 + $item23);
-}
-$item24: theOther4();
+// @function randomNumber() {
+//   @return (random(20) * 100%) / 100;
+// }
+// // First bar ------------------/
+// $item1: randomNumber();
+// $item2: randomNumber();
+// $item3: randomNumber();
+// $item4: randomNumber();
+// $item5: randomNumber();
+//
+// @function theOther() {
+//   @return 100% - ($item1 + $item2 + $item3 + $item4 + $item5);
+// }
+// $item6: theOther();
+// // Second bar ------------------/
+// $item7: randomNumber();
+// $item8: randomNumber();
+// $item9: randomNumber();
+// $item10: randomNumber();
+// $item11: randomNumber();
+//
+// @function theOther2() {
+//   @return 100% - ($item7 + $item8 + $item9 + $item10 + $item11);
+// }
+// $item12: theOther2();
+//
+// // Third bar ------------------/
+// $item13: randomNumber();
+// $item14: randomNumber();
+// $item15: randomNumber();
+// $item16: randomNumber();
+// $item17: randomNumber();
+//
+// @function theOther3() {
+//   @return 100% - ($item13 + $item14 + $item15 + $item16 + $item17);
+// }
+// $item18: theOther3();
+//
+// // Fourth bar ------------------/
+// $item19: randomNumber();
+// $item20: randomNumber();
+// $item21: randomNumber();
+// $item22: randomNumber();
+// $item23: randomNumber();
+//
+// @function theOther4() {
+//   @return 100% - ($item19 + $item20 + $item21 + $item22 + $item23);
+// }
+// $item24: theOther4();
