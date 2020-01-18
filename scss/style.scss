@@ -1,13 +1,10 @@
-/*******  Variables  ***********/
-$font-stack-primary: 'Lato', sans-serif;
-$color-navigation: #504c4b;
-$border-radius: 5px;
+@import 'partials/_functions.scss';
+@import 'partials/_variables.scss';
+@import 'partials/_mixins.scss';
 
+/*----------- Main Rules------------*/
 * {
   box-sizing: border-box;
-}
-a {
-  text-decoration: none;
 }
 h1 {
   font-family: $font-stack-primary;
@@ -18,9 +15,9 @@ p, a, h3 {
   font-size: .80em;
 }
 
-/*****************************
+/*-----------------------------
        Grid Display
-*****************************/
+-----------------------------*/
 .wrapper {
   display: grid;
   grid-template-columns: 1fr 2fr 2fr;
@@ -57,9 +54,9 @@ p, a, h3 {
   line-height: 1.1em;
 }
 
-/****************************
+/**-----------------------------
       Navigation styling
-****************************/
+*-----------------------------*/
 
 #navigation {
   color: white;
@@ -69,6 +66,7 @@ p, a, h3 {
   }
   a {
     color: white;
+    text-decoration: none;
   }
 }
 
@@ -89,9 +87,9 @@ p, a, h3 {
   }
 }
 
-/****************************
+/*-----------------------------
       Info styling
-****************************/
+-----------------------------*/
 
 .info-grid {
   display: grid;
@@ -142,7 +140,6 @@ p, a, h3 {
 /*****************************
      Charts Styling
 ******************************/
-
 .menu {
   display: flex;
   flex-direction: row;
@@ -150,92 +147,53 @@ p, a, h3 {
 }
 
 .blue::before {
-  content: '';
-  display: inline-block;
-  height: 10px;
-  width: 10px;
+  @include beforeCubes;
   background: blue;
-  margin-right: 7px;
-  transform: rotate(45deg);
 }
 
 .green::before {
-  content: '';
-  display: inline-block;
-  height: 10px;
-  width: 10px;
+  @include beforeCubes;
   background: green;
-  margin-right: 7px;
-  transform: rotate(45deg);
 }
 .yellow::before {
-  content: '';
-  display: inline-block;
-  height: 10px;
-  width: 10px;
+  @include beforeCubes;
   background: yellow;
-  margin-right: 7px;
-  transform: rotate(45deg);
 }
 .red::before {
-  content: '';
-  display: inline-block;
-  height: 10px;
-  width: 10px;
+  @include beforeCubes;
   background: red;
-  margin-right: 7px;
-  transform: rotate(45deg);
 }
 .purple::before {
-  content: '';
-  display: inline-block;
-  height: 10px;
-  width: 10px;
+  @include beforeCubes;
   background: purple;
-  margin-right: 7px;
-  transform: rotate(45deg);
 }
 .gray::before {
-  content: '';
-  display: inline-block;
-  height: 10px;
-  width: 10px;
+  @include beforeCubes;
   background: gray;
-  margin-right: 7px;
-  transform: rotate(45deg);
 }
 
 .charts div h3 {
   padding-top: 1.2em;
 }
-
-/********************************
-      Bars Styling
-********************************/
+/*-------------------------------------
+              Bar Styling
+-------------------------------------*/
 
 .avg {
-  display: grid;
-  grid-template-columns: 15% 22% 21% 26% 12% 4%;
-  min-height: 19px;
-  min-width: 95%;
+  @include bottomBars;
+  grid-template-columns: $item1 $item2 $item3 $item4 $item5 $item6;
 }
 .caut {
-  display: grid;
-  grid-template-columns: 12% 25% 20% 22% 15% 6%;
-  min-height: 19px;
-  min-width: 95%;
+  @include bottomBars;
+  grid-template-columns: $item7 $item12 $item8 $item9 $item10 $item11;
 }
 .comp {
-  display: grid;
-  grid-template-columns: 9% 19% 27% 18% 13% 14%;
-  min-height: 19px;
-  min-width: 95%;
+  @include bottomBars;
+  grid-template-columns: $item13 $item14 $item15 $item16 $item17 $item18;
 }
 .confident {
-  display: grid;
-  grid-template-columns: 6% 12% 27% 15% 23% 17%;
-  min-height: 19px;
-  min-width: 95%;
+  @include bottomBars;
+  grid-template-columns: $item19 $item20 $item21 $item22 $item23 $item24;
 }
 
 .item1 {

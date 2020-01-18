@@ -1,0 +1,14 @@
+//--------------Mixins---------------/
+@mixin bottomBars {
+  display: grid;
+  min-height: $bar-height;
+  min-width: 95%;
+}
+@mixin beforeCubes {
+  content: '';
+  display: inline-block;
+  height: 10px;
+  width: 10px;
+  margin-right: 7px;
+  transform: rotate(45deg);
+}
