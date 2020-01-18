@@ -1,4 +1,8 @@
 /*----------- Functions------------*/
+.test {
+  font-size: 3%;
+}
+
 /*----------- Main Rules------------*/
 * {
   box-sizing: border-box;
@@ -218,28 +222,28 @@ p, a, h3 {
   display: grid;
   min-height: 15px;
   min-width: 95%;
-  grid-template-columns: 1% 12% 7% 1% 1% 78%;
+  grid-template-columns: 10% 17% 2% 6% 5% 60%;
 }
 
 .caut {
   display: grid;
   min-height: 15px;
   min-width: 95%;
-  grid-template-columns: 11% 65% 5% 5% 10% 4%;
+  grid-template-columns: 8% 48% 8% 18% 9% 9%;
 }
 
 .comp {
   display: grid;
   min-height: 15px;
   min-width: 95%;
-  grid-template-columns: 15% 19% 9% 12% 15% 30%;
+  grid-template-columns: 10% 3% 8% 12% 18% 49%;
 }
 
 .confident {
   display: grid;
   min-height: 15px;
   min-width: 95%;
-  grid-template-columns: 11% 12% 15% 12% 19% 31%;
+  grid-template-columns: 7% 4% 7% 14% 1% 67%;
 }
 
 .item1 {

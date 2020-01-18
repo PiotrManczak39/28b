@@ -1,8 +1,8 @@
 //--------------Mixins---------------/
-@mixin bottomBars {
+@mixin bottomBars($w) {
   display: grid;
   min-height: $bar-height;
-  min-width: 95%;
+  min-width: $w;
 }
 @mixin beforeCubes {
   content: '';

@@ -2,6 +2,11 @@
 @import 'partials/_variables.scss';
 @import 'partials/_mixins.scss';
 
+
+.test {
+  font-size: randomNumber();
+}
+
 /*----------- Main Rules------------*/
 * {
   box-sizing: border-box;
@@ -180,19 +185,19 @@ p, a, h3 {
 -------------------------------------*/
 
 .avg {
-  @include bottomBars;
+  @include bottomBars(95%);
   grid-template-columns: $item1 $item2 $item3 $item4 $item5 $item6;
 }
 .caut {
-  @include bottomBars;
+  @include bottomBars(95%);
   grid-template-columns: $item7 $item12 $item8 $item9 $item10 $item11;
 }
 .comp {
-  @include bottomBars;
+  @include bottomBars(95%);
   grid-template-columns: $item13 $item14 $item15 $item16 $item17 $item18;
 }
 .confident {
-  @include bottomBars;
+  @include bottomBars(95%);
   grid-template-columns: $item19 $item20 $item21 $item22 $item23 $item24;
 }
 

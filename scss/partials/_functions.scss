@@ -1,6 +1,6 @@
 /*----------- Functions------------*/
 @function randomNumber() {
-  @return (random(19) * 100%) / 100;
+  @return (random(20) * 100%) / 100;
 }
 // First bar ------------------/
 $item1: randomNumber();
@@ -37,7 +37,7 @@ $item17: randomNumber();
 }
 $item18: theOther3();
 
-// Third bar ------------------/
+// Fourth bar ------------------/
 $item19: randomNumber();
 $item20: randomNumber();
 $item21: randomNumber();
